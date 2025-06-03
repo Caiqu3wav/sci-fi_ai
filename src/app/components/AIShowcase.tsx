@@ -139,7 +139,7 @@ const AIShowcase = () => {
                   </div>
                 </div>
                 <div className="flex gap-3">
-                  <button className={`flex-1 bg-${ai.color}-600/20 hover:bg-${ai.color}-600/30 rounded-2xl cursor-pointer ${getIconColor(ai.color)} border border-${ai.color}-500/30`}>
+                  <button className={`flex-1 flex items-center justify-center bg-${ai.color}-600/20 hover:bg-${ai.color}-600/30 rounded-2xl cursor-pointer ${getIconColor(ai.color)} border border-${ai.color}-500/30`}>
                     <TrendingUp className="w-4 h-4 mr-2" />
                     Learn More
                   </button>

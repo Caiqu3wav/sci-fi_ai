@@ -35,7 +35,7 @@ const Hero = () => {
             <Zap className="w-5 h-5 mr-2" />
             Request Demo
           </button>
-          <button className="border-gray-600 cursor-pointer text-white hover:bg-gray-800 px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105">
+          <button className="border-gray-600 bg-black/15 rounded-xl cursor-pointer text-white hover:bg-gray-800 px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105">
             Talk to AI Advisor
           </button>
         </div>
