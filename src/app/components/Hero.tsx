@@ -1,11 +1,13 @@
 import React from 'react';
-import { Rocket, Zap } from 'lucide-react';
+import { Zap } from 'lucide-react';
+import ScifiLogo from '../../../public/assets/img/logo/sci-fi_logo-1.png'
+import Image from 'next/image';
 
 const Hero = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-purple-900 to-black"></div>
       
       {/* Animated Background Elements */}
       <div className="absolute inset-0 opacity-20">
@@ -15,8 +17,8 @@ const Hero = () => {
       
       <div className="relative z-10 text-center px-6 max-w-6xl mx-auto">
         <div className="flex items-center justify-center mb-8">
-          <div className="bg-blue-600/20 p-4 rounded-full border border-blue-500/30">
-            <Rocket className="w-12 h-12 text-blue-400" />
+          <div className="p-4 rounded-full ">
+            <Image src={ScifiLogo} alt="Sci-fi logo"/>
           </div>
         </div>
         
@@ -29,11 +31,11 @@ const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105">
+          <button className="bg-blue-600 cursor-pointer hover:bg-blue-700 rounded-xl flex items-center justify-center text-white px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105">
             <Zap className="w-5 h-5 mr-2" />
             Request Demo
           </button>
-          <button className="border-gray-600 text-white hover:bg-gray-800 px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105">
+          <button className="border-gray-600 cursor-pointer text-white hover:bg-gray-800 px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105">
             Talk to AI Advisor
           </button>
         </div>
